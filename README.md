@@ -66,9 +66,10 @@ Keep reading to learn about modifying an existing dashboard, or how to build you
 
    **GitHub builds:** Your personal access token will be automatically generated when running the workflow on GitHub.
 
-   **Local builds:** To build the HTML locally, run the following command in your repository:
+   **Local builds:** To build the HTML locally, run the following command in your repository (making sure you've installed the package first):
 
      ```shell
+     pip install -e .
      python update_dashboard.py PERSONAL_ACCESS_TOKEN ./config/tracked_workflows.yaml index.html
      ```
 
